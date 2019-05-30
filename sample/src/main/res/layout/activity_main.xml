@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="start"
+            android:text="Mulai Waktu"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pause"
+            android:text="Jeda Waktu"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="setTime"
+            android:text="Atur Waktu"/>
+
+        <EditText
+            android:id="@+id/time_set_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0 ~ 3600"
+            android:inputType="number"
+            android:text="00"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setHint"
+            android:text="Atur Tag"/>
+
+        <EditText
+            android:id="@+id/hint_set_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waktu"/>
+    </LinearLayout>
+
+
+    <com.app.irfan.ngitungmundur.ngitungwaktumundur
+        android:id="@+id/ctv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+    </com.app.irfan.ngitungmundur.ngitungwaktumundur>
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:text="STOP TIMER"-->
+    <!--android:onClick="stop"/>-->
+</LinearLayout>
